@@ -1,0 +1,200 @@
+
+.side_menu.inactive{
+    transition: all 0.3s ease;
+    width: 80px;
+ 
+}
+.side_menu{
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 100vh;
+  box-sizing: border-box;
+  padding:  30px 20px ;
+  transform: width .3s ease-in;
+}
+.side_menu .React_i{
+    font-size: 50px;
+    color: rgb(255, 83, 83);
+}
+.main-menu .fonstweait{
+    font-weight: 900;
+}
+.sub-menu.addColor {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    transition: all 0.3s ease;
+  color: white;
+  overflow: visible;
+}
+
+.side_menu .top_section {
+    position: relative;
+}
+
+.side_menu .top_section .logo{
+    width: 45px;
+    height: 45px ;
+    }    
+.side_menu .top_section .logo .img {
+    border-radius: 50%;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+
+
+.side_menu .top_section  .toggele-menu-btn {
+    font-size: 23px;
+    color: #333;
+    position: absolute;
+    top: 50% ;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.side_menu.inactive .top_section .toggele-menu-btn{
+right: -50px;
+}
+.side_menu .search-controller{
+    color: #fff;
+    position: relative;
+}
+
+.side_menu .search-controller .search-btn{
+ width: 40px;
+ height: 35px;
+    position: absolute;
+background: transparent;
+border:  0px;
+font-size: 20px;
+color: #666;
+
+}
+
+.side_menu .search-controller input {
+border: none;
+height: 35px ;
+background-color: #333;
+outline:  none;
+display: block;
+border-radius:  5px;
+margin:  20px 0px;
+width: 100%;
+color: #666;
+box-sizing: border-box;
+padding-left:  40px;
+color: #fff;
+}
+
+
+.side_menu .main-menu .menu-item {
+    color:  #333;
+    text-decoration: none;
+    font-size:  15px;
+display: block;
+font-weight: 600;
+cursor: pointer;
+}
+
+.side_menu .main-menu {
+    margin: 5xpx 0px ;
+       position: relative;
+}
+ .side_menu .main-menu .menu-item .menu-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 23px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 10px;
+}
+.side_menu .main-menu .menu-item span {
+position: absolute;
+display: inline-block;
+line-height: 40px;
+opacity: 1;
+transition: opaycity .2s ease-in;
+}
+.side_menu.inactive .main-menu .menu-item span {
+    opacity: 0;
+}
+
+.side_menu .main-menu .sub-menu{
+color: #333;
+margin-left: 20px;
+border-left:  1px solid #666;
+box-sizing: border-box;
+padding-left:  30px ;
+}
+
+
+
+
+.side_menu .main-menu .sub-menu a {
+display: block;
+margin:  5px 0px;
+font-size:  15px ;
+font-weight: 600;
+
+} 
+.divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+background-color: #333;
+}
+
+ .side-menu-footer {
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0px;
+    left:  0px;
+    padding:   20px;
+box-sizing: border-box;
+}
+
+.side-menu-footer .avatar{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+ .side-menu-footer .avatar img{
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.side-menu-footer .user-info {
+display: inline-block;
+margin:  0px 10px ;
+    color: #fff;
+opacity: 1;
+position: absolute;
+transition: opacity .2s  ease;
+
+}
+.side_menu.inactive .side-menu-footer .user-info{
+   opacity: 1;
+   width: 0px;
+   height: 0px;
+   overflow: hidden; 
+   
+} 
+
+.side-menu-footer .user-info h4 {
+    font-size: 15px;
+}
+.side-menu-footer .user-info p{
+    font-size: 14px
+    ;
+}
