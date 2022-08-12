@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
 import "./stayle.css"
-import Imgnav from "../../assest/wba.png"
 import Men from "../../assest/men.jpg"
-import { FcHome, } from "react-icons/fc";
 import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { GrAppsRounded } from "react-icons/gr";
 
-export const SideMene = (props) => {
+export const SideMene = () => {
     const [inactive, setInactive] = useState(false);
     const [open, setOpen] = useState(false)
     const [open2, setOpen2] = useState(false)
@@ -31,7 +29,7 @@ export const SideMene = (props) => {
                 <div className='logo' >
                     <span className='React_i'>  <FaReact /></span>
                     <div onClick={() => setInactive(!inactive)} className='toggele-menu-btn' >
-                        {inactive ? <i class="bi bi-arrow-right-square-fill"></i> : <i class="bi bi-arrow-left-square-fill"></i>}
+                        {inactive ? <i className="bi bi-arrow-right-square-fill"></i> : <i className="bi bi-arrow-left-square-fill"></i>}
                     </div>
                 </div>
             </div>
@@ -47,12 +45,12 @@ export const SideMene = (props) => {
             <div className='main-menu'>
                 <ul>
                     <li>
-                        <a className='menu-item' onClick={() => OpenFunction()}>
+                        <span className='menu-item' onClick={() => OpenFunction()}>
                             <div className='menu-icon'>
                                 <i><GrAppsRounded /></i>
                             </div>
                             <span>Fontend</span>
-                        </a>
+                        </span>
                         {open ?
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
                                 <li>
@@ -78,12 +76,12 @@ export const SideMene = (props) => {
             <div className='main-menu'>
                 <ul>
                     <li>
-                        <a className='menu-item' onClick={() => OpenFunction2()}>
+                        <span className='menu-item' onClick={() => OpenFunction2()}>
                             <div className='menu-icon'>
                                 <i><GrAppsRounded /></i>
                             </div>
                             <span>Becend</span>
-                        </a>
+                        </span>
                         {open2 ?
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
                                 <li>
@@ -108,12 +106,12 @@ export const SideMene = (props) => {
             <div className='main-menu'>
                 <ul>
                     <li>
-                        <a className='menu-item' onClick={() => OpenFunction3()}>
+                        <span className='menu-item' onClick={() => OpenFunction3()}>
                             <div className='menu-icon'>
                                 <i><GrAppsRounded /></i>
                             </div>
                             <span>Android</span>
-                        </a>
+                        </span>
                         {open3 ?
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
                                 <li>
@@ -145,7 +143,6 @@ export const SideMene = (props) => {
                 <div className='user-info'>
                     <h4>Khasan</h4>
                     <p>xasan_100@icloud.com</p>
-                    <h1></h1>
 
                 </div>
             </div>
