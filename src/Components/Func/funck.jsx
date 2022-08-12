@@ -118,15 +118,15 @@ export const SideMene = (props) => {
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
                                 <li>
                                     <span><FaHtml5 /> </span>
-                                    <span>Html5</span>
+                                    <span>React Native</span>
                                 </li>
                                 <li>
                                     <span><FaCss3 /> </span>
-                                    <span>Css</span>
+                                    <span>Kotlin</span>
                                 </li>
                                 <li>
                                     <span><FaJs /> </span>
-                                    <span>Java script</span>
+                                    <span>Java</span>
                                 </li>
                             </ul>
 
