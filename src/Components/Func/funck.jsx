@@ -35,7 +35,7 @@ export const SideMene = () => {
             </div>
             < div className='search-controller' >
                 <button className='search-btn'>
-                    <i class="bi bi-search"></i>
+                    <i className="bi bi-search"></i>
                 </button>
                 <input type="text" placeholder=' search me' />
             </div>
@@ -66,7 +66,6 @@ export const SideMene = () => {
                                     <span>Java script</span>
                                 </li>
                             </ul>
-
                             : ""
                         }
                     </li>
@@ -133,9 +132,6 @@ export const SideMene = () => {
                     </li>
                 </ul>
             </div>
-
-
-
             <div className='side-menu-footer'>
                 <div className='avatar'>
                     <img src={Men} alt="" />
