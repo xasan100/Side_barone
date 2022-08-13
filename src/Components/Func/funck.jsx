@@ -27,9 +27,9 @@ export const SideMene = () => {
         <div className={`side_menu  ${inactive ? "inactive" : ""}`}>
             <div className='top_section' >
                 <div className='logo' >
-                    <span className='React_i'>  <FaReact /></span>
+                    <span onClick={() => setInactive(!inactive)} className='React_i'>  <FaReact /></span>
                     <div onClick={() => setInactive(!inactive)} className='toggele-menu-btn' >
-                        {inactive ? <i className="bi bi-arrow-right-square-fill"></i> : <i className="bi bi-arrow-left-square-fill"></i>}
+                        {!inactive ? <i className="bi bi-arrow-left-square-fill"></i> : ""}
                     </div>
                 </div>
             </div>
@@ -46,10 +46,12 @@ export const SideMene = () => {
                 <ul>
                     <li>
                         <span className='menu-item' onClick={() => OpenFunction()}>
-                            <div className='menu-icon'>
-                                <i><GrAppsRounded /></i>
+                            <div className="box_shadowf">
+                                <div className='menu-icon'>
+                                    <i><GrAppsRounded /></i>
+                                </div>
+                                <span>Fontend</span>
                             </div>
-                            <span>Fontend</span>
                         </span>
                         {open ?
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
@@ -76,23 +78,25 @@ export const SideMene = () => {
                 <ul>
                     <li>
                         <span className='menu-item' onClick={() => OpenFunction2()}>
-                            <div className='menu-icon'>
-                                <i><GrAppsRounded /></i>
+                            <div className="box_shadowf">
+                                <div className='menu-icon'>
+                                    <i><GrAppsRounded /></i>
+                                </div>
+                                <span>ANDROID</span>
                             </div>
-                            <span>Becend</span>
                         </span>
                         {open2 ?
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
                                 <li>
-                                    <span><FaHtml5 /> </span>
+                                    <span className='icon_fone'><FaHtml5 /> </span>
                                     <span>Html5</span>
                                 </li>
                                 <li>
-                                    <span><FaCss3 /> </span>
+                                    <span className='icon_fone'><FaCss3 /> </span>
                                     <span>Css</span>
                                 </li>
                                 <li>
-                                    <span><FaJs /> </span>
+                                    <span className='icon_fone'><FaJs /> </span>
                                     <span>Java script</span>
                                 </li>
                             </ul>
@@ -106,10 +110,12 @@ export const SideMene = () => {
                 <ul>
                     <li>
                         <span className='menu-item' onClick={() => OpenFunction3()}>
-                            <div className='menu-icon'>
-                                <i><GrAppsRounded /></i>
+                            <div className="box_shadowf">
+                                <div className='menu-icon'>
+                                    <i><GrAppsRounded /></i>
+                                </div>
+                                <span>BACKEND</span>
                             </div>
-                            <span>Android</span>
                         </span>
                         {open3 ?
                             <ul className={`sub-menu ${inactive ? "addColor" : ""} `} >
