@@ -3,6 +3,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+   -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 ul {
@@ -20,7 +27,15 @@ li{
 }
 body{
   background-color: rgb(241, 240, 240);
+  
 }
 
-
-
+/* 
+.nocopy {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+} */
